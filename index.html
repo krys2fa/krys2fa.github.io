@@ -1,287 +1,304 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171812370-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
+<!DOCTYPE html>
+<html lang="en">
 
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio</title>
+</head>
 
-			gtag('config', 'UA-171812370-1');
-		</script>
+<body>
 
-		<title>Christopher Amanor</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#" class="nav-logo">Christopher Amanor</a>
+      </div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="#publications" class="nav-link">Publications</a></li>
+        </ul>
+      </div>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1>Christopher Kwasi Amanor</h1>
-						<p>REMOTE FULL-STACK WEB DEVELOPER</p>
-            <p>
-            <a class="button icon solid small fa-tools" href="mailto:christopher.k.amanor@gmail.com">
-              Hire Me
-            </a>
+      <div class="nav-toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
 
-            <a class="button icon solid small fa-file" target="_blank"
-              href="https://drive.google.com/file/d/1iXd-1thA0No7lRGFdefnDGzP2g9sdHGw/view?usp=sharing">
-              Resume
-            </a>
+
+  <main class="l-main">
+    <section class="home" id='home'>
+      <div class="home-container bd-grid">
+        <h1 class="home-title"><span>Hi</span><br>there.</h1>
+
+        <div class="home-scroll">
+          <a href="#about" class="home-scroll-link"><i class="bx bx-up-arrow-alt"></i>Scroll down</a>
+        </div>
+
+        <div>
+          <a class="action-buttons" target="_blank" href="mailto:christopher.k.amanor@gmail.com"><i class="bx bxl-phone-outgoing"></i><span>Hire Me</span></a>
+          <a class="action-buttons" target="_blank" href="https://drive.google.com/file/d/1iXd-1thA0No7lRGFdefnDGzP2g9sdHGw/view?usp=sharing">Resume</a>
+        </div>
+
+        <div class="about-social-white">
+            <a href="#" class="about-social-white"><i class="bx bxl-linkedin"></i></a>
+            <a href="#" class="about-social-white"><i class="bx bxl-github"></i></a>
+            <a href="#" class="about-social-white"><i class="bx bxl-angelist"></i></a>
+            <a href="#" class="about-social-white"><i class="bx bxl-twitter"></i></a>
+          </div>
+
+        <img src="assets/images/chris.jpg" alt="" class="home-img">
+      </div>
+
+    </section>
+
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
+
+      <div class="about-container bd-grid">
+        <div class="about-img">
+          <img src="assets/images/chris.jpg" alt="">
+        </div>
+
+        <div>
+          <h2 class="about-subtitle">I am Christopher Amanor</h2>
+          <span class="about-profession">Full Stack Developer</span>
+          <p class="about-text">
+            Ruby | Rails | JavaScript | React | PHP
           </p>
-					</header>
+          <div class="about-social">
+            <a href="#" class="about-social-icon"><i class="bx bxl-linkedin"></i></a>
+            <a href="#" class="about-social-icon"><i class="bx bxl-github"></i></a>
+            <a href="#" class="about-social-icon"><i class="bx bxl-angelist"></i></a>
+            <a href="#" class="about-social-icon"><i class="bx bxl-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">Projects</a></li>
-							<li><a href="#second">Work Experience</a></li>
-							<li><a href="#cta">Publications</a></li>
-						</ul>
-					</nav>
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
 
-				<!-- Main -->
-					<div id="main">
+      <div class="skills-box">
+        <h3 class="skills-subtitle">Development</h3>
+        <span class="skills-name">HTML</span>
+        <span class="skills-name">CSS</span>
+        <span class="skills-name">Sass</span>
+        <span class="skills-name">JavaScript(ES5/ES6)</span>
+        <span class="skills-name">React</span>
+        <span class="skills-name">Ruby</span>
+        <span class="skills-name">Ruby on Rails</span>
+        <span class="skills-name">Redux</span>
+        <span class="skills-name">Bootstrap</span>
+        <span class="skills-name">Bulma</span>
+        <span class="skills-name">Semantic UI</span>
+        <span class="skills-name">Git</span>
+        <span class="skills-name">MySQL</span>
+        <span class="skills-name">PostgreSQL</span>
+        <span class="skills-name">GitHub</span>
+        <span class="skills-name">Heroku</span>
+        <span class="skills-name">Netlify</span>
+        <span class="skills-name">Test Driven Development</span>
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Introduction</h2>
-										</header>
-										<p>An innovative software developer offering six years of experience in engineering well-researched
-                      and cost-effective solutions.</p>
+        <h3 class="skills-subtitle">Professional</h3>
+        <span class="skills-name">Remote Pair-Programming</span>
+        <span class="skills-name">Teamwork</span>
+        <span class="skills-name">Mentoring</span>
+        <span class="skills-name">Project Management</span>
+      </div>
 
-                      <p>Technical skill set includes:</p>
+    </section>
 
-                      <ul>
-                        <li>programming languages such as Ruby, Javascript and PHP.</li>
-                        <li>frameworks such as Ruby on Rails, React, Codeigniter, Bootstrap and
-                          Semantic-UI.</li>
-                          <li>relational database management systems such as Postgresql and MySQL.</li>
-                        <li>distributed version control systems such as Git.</li>
-                        <li>Linux (Ubuntu/CentOs) server administration.</li>
-                      </ul>
+    <section class="portfolio section" id="portfolio">
+      <h2 class="section-title">Portfolio</h2>
 
-                    <p>
-                      <ul class="icons">
-                        <li><a href="https://www.linkedin.com/in/christopher-amanor/"
-                            class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
-                        <li><a href="https://twitter.com/krys2fa" class="icon brands fa-twitter alt"><span
-                              class="label">Twitter</span></a></li>
-                        <li><a href="https://angel.co/u/krys2fa" class="icon brands fa-angellist alt"><span
-                              class="label">Facebook</span></a>
-                        </li>
-                        <li><a href="https://github.com/krys2fa" class="icon brands fa-github alt"><span
-                              class="label">GitHub</span></a></li>
-                      </ul>
-                    </p>
+      <div class="portfolio-container bd-grid">
+        <div>
+          Vehicle Booking App
+          <div class="portfolio-img">
+        <img src="assets/images/vehicle-booking.png" alt="">
+        <div class="portfolio-link">
+          <a target="_blank" href="https://vehicle-booking.netlify.app/" class="portfolio-link-name">View Demo</a>
+          <a target="_blank" href="https://github.com/krys2fa/vehicle-booking-app" class="portfolio-link-name">View Repository</a>
+        </div>
+      </div>
+        <div>
+          <span>Tech Stack:</span>
+          <span class="skills-name">React</span>
+          <span class="skills-name">Redux</span>
+          <span class="skills-name">Git</span>
+          <span class="skills-name">GitHub</span>
+          <span class="skills-name">Netlify</span>
+          <span class="skills-name">Jest</span>
+        </div>
+        </div>
 
-									</div>
-									<span class="image"><img src="images/professional-photo.jpg" alt="" /></span>
-								</div>
-							</section>
+      <div>
+        Car TV Show Guide
+        <div class="portfolio-img">
+        <img src="assets/images/car-show-guide.png" alt="">
+        <div class="portfolio-link">
+          <a target="_blank" href="https://car-show-guide.netlify.app/" class="portfolio-link-name">View Demo</a>
+          <a target="_blank" href="https://github.com/krys2fa/tv-show-guide" class="portfolio-link-name">View Repository</a>
+        </div>
+      </div>
+      <div>
+          <span>Tech Stack:</span>
+          <span class="skills-name">React</span>
+          <span class="skills-name">Redux</span>
+          <span class="skills-name">Git</span>
+          <span class="skills-name">GitHub</span>
+          <span class="skills-name">Netlify</span>
+          <span class="skills-name">Jest</span>
+        </div>
+      </div>
 
-						<!-- Projects -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Projects</h2>
-                </header>
-                <div>
-									 <h3>Healthizone</h3>
-									 <p>A front-end user interface for an online store trading in pharmaceutical products.</p>
-                   <p><img class='project-img' src="/images/healthizone.png" alt="healthizone"></p>
-                   <img src="https://img.icons8.com/color/48/000000/html-5.png" />
-                   <img src="https://img.icons8.com/color/48/000000/css3.png" />
+      <div>
+        Ironman Dash Game
+        <div class="portfolio-img">
+        <img src="assets/images/ironman-dash.png" alt="">
+        <div class="portfolio-link">
+          <a target="_blank" href="https://ironman-dash.netlify.app/" class="portfolio-link-name">View Demo</a>
+          <a target="_blank" href="https://github.com/krys2fa/ironman-dash" class="portfolio-link-name">View Repository</a>
+        </div>
+      </div>
+      <div>
+          <span>Tech Stack:</span>
+          <span class="skills-name">JavaScript(ES6)</span>
+          <span class="skills-name">Phaser Game Engine</span>
+          <span class="skills-name">Git</span>
+          <span class="skills-name">GitHub</span>
+          <span class="skills-name">Netlify</span>
+          <span class="skills-name">Jest</span>
+        </div>
+      </div>
 
-                   <p>
-                     <a class="button icon fa-desktop solid" target="_blank"
-                     href="https://rawcdn.githack.com/krys2fa/healthi-zone/aab1a3621f975e754202a4402dad94e24109aa41/index.html">
-                       View Demo
-                     </a>
+      <div>
+        Sports Blog
+        <div class="portfolio-img">
+        <img src="assets/images/sportzhood.png" alt="">
+        <div class="portfolio-link">
+          <a target="_blank" href="https://sportzhood.herokuapp.com/" class="portfolio-link-name">View Demo</a>
+          <a target="_blank" href="https://github.com/krys2fa/sportzhood" class="portfolio-link-name">View Repository</a>
+        </div>
+      </div>
+      <div>
+          <span>Tech Stack:</span>
+          <span class="skills-name">Ruby on Rails</span>
+          <span class="skills-name">PostgreSQL</span>
+          <span class="skills-name">Git</span>
+          <span class="skills-name">GitHub</span>
+          <span class="skills-name">Heroku</span>
+          <span class="skills-name">RSpec</span>
+        </div>
+      </div>
 
-                     <a class="button icon fa-code solid" target="_blank"
-                       href="https://github.com/krys2fa/healthi-zone">
-                       View Code
-                     </a>
-                   </p>
-                </div>
-
-                <!-- <div>
-									<h3>Clone of Newsweek Website</h3>
-									<p>A replica of the popular news website <a href="https://newsweek.com">Newsweek</a></p>
-                  <p><img class='project-img' src="/images/newsweek-clone.png" alt="newsweek-clone"></p>
-                  <img src="https://img.icons8.com/color/48/000000/html-5.png" />
-                  <img src="https://img.icons8.com/color/48/000000/css3.png" />
-                  <img src="https://img.icons8.com/color/48/000000/bootstrap.png" />
-
-                  <p>
-                    <a class="button icon fa-desktop solid" target="_blank"
-                      href="https://rawcdn.githack.com/krys2fa/newsweek-clone/16b2015d1e65b0e3410ed5fd9c751619f5a92a1b/index.html">
-                      View Demo
-                    </a>
-
-                    <a class="button icon fa-code solid" target="_blank"
-                      href="https://github.com/krys2fa/newsweek-clone">
-                      View Code
-                    </a>
-                  </p>
-								</div> -->
-
-								<div>
-									<h3>spoRtzHood</h3>
-									<p>A sports blog app for writing sports articles with voting, commenting and tagging features.</p>
-									<p><img class='project-img' src="/images/sportzhood.png" alt="edubox"></p>
-									<img src="https://img.icons8.com/color/48/000000/html-5.png" />
-									<img src="https://img.icons8.com/color/48/000000/css3.png" />
-									<img src="https://img.icons8.com/color/48/000000/ruby-programming-language.png" />
-									<img src="https://img.icons8.com/color/48/000000/bootstrap.png" />
-									<img src="https://img.icons8.com/color/48/000000/sass.png" />
-									<img src="https://img.icons8.com/color/48/000000/heroku.png" />
-									<img src="/images/rails.png" alt="rails" class="logos">
-
-									<p>
-										<a class="button icon fa-desktop solid" target="_blank" href="https://sportzhood.herokuapp.com">
-											View Demo
-										</a>
-
-										<a class="button icon fa-code solid" target="_blank" href="https://github.com/krys2fa/sportzhood">
-											View Code
-										</a>
-									</p>
-								</div>
-
-                <div>
-									<h3>Restaurant Page</h3>
-									<p>A simple restaurant web page demonstrating DOM manipulation with Javascript.</p>
-                  <p><img class='project-img' src="/images/menu.png" alt="fuudie-menu"></p>
-                  <img src="https://img.icons8.com/color/48/000000/html-5.png" />
-                  <img src="https://img.icons8.com/color/48/000000/css3.png" />
-									<img src="https://img.icons8.com/color/48/000000/javascript.png" />
-									<img src="https://img.icons8.com/dusk/64/000000/webpack.png" />
-
-                  <p>
-                    <a class="button icon fa-desktop solid" target="_blank"
-                      href="https://krys2fa.github.io/restaurant-home-page/">
-                      View Demo
-                    </a>
-
-                    <a class="button icon fa-code solid" target="_blank" href="https://github.com/krys2fa/restaurant-home-page">
-                      View Code
-                    </a>
-                  </p>
-                </div>
-
-                <div>
-									<h3>CSS Censor</h3>
-									<p>A CSS lint tool for ensuring CSS best practices in stylesheets.</p>
-                  <p><img class='project-img' src="/images/css-censor.png" alt="css-censor"></p>
-
-                  <img src="https://img.icons8.com/color/48/000000/ruby-programming-language.png" />
-                  <img src="/images/rspec.png" alt="rspec" class="logos">
-
-                  <p>
-                    <a class="button icon fa-code solid" target="_blank" href="https://github.com/krys2fa/css-censor">
-                      View Code
-                    </a>
-                  </p>
-                </div>
-
-							</section>
-
-						<!-- Work Experience -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>Work Experience</h2>
-								</header>
-
-								<section class="experience">
-									<section>
-										<img src="/images/nfortics.png" alt="nfortics" class="experience-imgs">
-										<p><a href="https://www.nfortics.com/" target="_blank">nFortics Ltd</a></p>
-										<p><b>2014</b></p>
-									</section>
-									<section><i class="fa fa-arrow-alt-circle-right"></i></section>
-									<section>
-										<img src="/images/txtghana.png" alt="txtghana" class="experience-imgs">
-										<p><a href="https://www.txtghana.com/" target="_blank">TxtGhana Ltd</a></p>
-										<p><b>2015</b></p>
-									</section>
-									<section><i class="fa fa-arrow-alt-circle-right"></i></section>
-									<section>
-										<img src="/images/nthc.png" alt="nthc" class="experience-imgs">
-										<p><a href="https://nthc.com.gh/" target="_blank">National Trust Holding Company</a></p>
-										<p><b>2017</b></p>
-									</section>
-									<section><i class="fa fa-arrow-alt-circle-right"></i></section>
-									<section>
-										<img src="/images/question.png" alt="question" class="experience-imgs">
-										<p><b>...</b></p>
-										<p><b>2020</b></p>
-									</section>
+       <div>
+        Weather Forecast App
+        <div class="portfolio-img">
+        <img src="assets/images/weather.png" alt="">
+        <div class="portfolio-link">
+          <a target="_blank" href="https://raw.githack.com/krys2fa/weather-app/weather-app/dist/index.html" class="portfolio-link-name">View Demo</a>
+          <a target="_blank" href="https://github.com/krys2fa/weather-app" class="portfolio-link-name">View Repository</a>
+        </div>
+      </div>
+      <div>
+          <span>Tech Stack:</span>
+          <span class="skills-name">JavaScript(ES6)</span>
+          <span class="skills-name">Git</span>
+          <span class="skills-name">GitHub</span>
+          <span class="skills-name">GitHack</span>
+        </div>
+      </div>
 
 
-								</section>
-							</section>
+     <div>
+       CSS Lint Tool
+        <div class="portfolio-img">
+        <img src="assets/images/css-censor.png" alt="">
+        <div class="portfolio-link">
+          <a target="_blank" href="https://github.com/krys2fa/css-censor" class="portfolio-link-name">View Repository</a>
+        </div>
+      </div>
+      <div>
+          <span>Tech Stack:</span>
+          <span class="skills-name">Ruby</span>
+          <span class="skills-name">RSpec</span>
+          <span class="skills-name">Git</span>
+          <span class="skills-name">GitHub</span>
+        </div>
+      </div>
+     </div>
 
-						<!-- Publications -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Publications</h2>
-								</header>
+    </section>
 
-								<p>
-									<img src="/images/background-css.jpeg" alt="background-css" class='post-imgs'>
-									<h2><a href="https://medium.com/@krys2fa/background-images-in-css-the-right-use-cases-1e3ca259bbcd"
-											target="_blank">
-											Background Images in CSS: The Right Use Cases</a></h2>
-								</p>
+    <section class="portfolio section" id="publications">
+      <h2 class="section-title">Publications</h2>
 
-								<a class="button icon fa-book-reader solid" target="_blank"
-								   href="https://medium.com/@krys2fa">Read more</a>
-							</section>
+     <div class="publications-container bd-grid">
+        <div class="portfolio-img">
+          <div>CSS Background Images: The Right Use Cases</div>
+          <img src="assets/images/background-images.jpeg" alt="">
+          <div class="portfolio-link">
+            <a target="_blank" href="https://medium.com/@krys2fa/background-images-in-css-the-right-use-cases-1e3ca259bbcd" class="portfolio-link-name">Read More</a>
+          </div>
+        </div>
 
-					</div>
 
-					<footer>
-						<p>
-							<ul class="icons">
-								<li><a href="https://www.linkedin.com/in/christopher-amanor/" class="icon brands fa-linkedin alt"><span
-											class="label">Linkedin</span></a></li>
-								<li><a href="https://twitter.com/krys2fa" class="icon brands fa-twitter alt"><span
-											class="label">Twitter</span></a></li>
-								<li><a href="https://angel.co/u/krys2fa" class="icon brands fa-angellist alt"><span
-											class="label">Facebook</span></a>
-								</li>
-								<li><a href="https://github.com/krys2fa" class="icon brands fa-github alt"><span
-											class="label">GitHub</span></a></li>
-							</ul>
-						</p>
-					</footer>
 
-			</div>
+      <div class="portfolio-img">
+        <div>Setting up a JavaScript Project with Webpack and Linters</div>
+        <img src="assets/images/js-setup.jpeg" alt="">
+        <div class="portfolio-link">
+          <a target="_blank" href="https://medium.com/@krys2fa/bootstrapping-a-javascript-project-with-webpack-4ae0bc316c80" class="portfolio-link-name">Read More</a>
+        </div>
+      </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    </section>
 
-	</body>
+    <footer class="footer section">
+      <div class="footer-container bd-grid">
+        <div class="footer-data">
+          <h2 class="footer-title">Christopher Amanor</h2>
+          <p class="footer-text">I'm Christopher Amanor and this is my personal website</p>
+        </div>
+
+        <div class="footer-data">
+          <h2 class="footer-title">Explore</h2>
+          <ul>
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#skills" class="footer-link">Skills</a></li>
+            <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+            <li><a href="#publications" class="footer-link">Publications</a></li>
+          </ul>
+        </div>
+
+      <div class="footer-data">
+        <h2 class="footer-title">Follow</h2>
+        <a href="#" class="footer-social"><i class="bx bxl-linkedin"></i></a>
+        <a href="#" class="footer-social"><i class="bx bxl-github"></i></a>
+        <a href="#" class="footer-social"><i class="bx bxl-twitter"></i></a>
+      </div>
+      </div>
+
+
+    </footer>
+  </main>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>

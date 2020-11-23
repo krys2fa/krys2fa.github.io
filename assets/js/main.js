@@ -1,123 +1,66 @@
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+const showMenu = (toggleId, navId) => {
+  const toggle = document.getElementById(toggleId),
+	nav = document.getElementById(navId)
 
-(function($) {
+	if (toggle && nav) {
+	  toggle.addEventListener('click', () => {
+		  nav.classList.toggle('show')
+		})
+	}
+}
 
-	var	$window = $(window),
-		$body = $('body'),
-		$main = $('#main');
+showMenu('nav-toggle', 'nav-menu')
 
-	// Breakpoints.
-		breakpoints({
-			xlarge:   [ '1281px',  '1680px' ],
-			large:    [ '981px',   '1280px' ],
-			medium:   [ '737px',   '980px'  ],
-			small:    [ '481px',   '736px'  ],
-			xsmall:   [ '361px',   '480px'  ],
-			xxsmall:  [ null,      '360px'  ]
-		});
+const navLink = document.querySelectorAll('.nav-link')
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
+function linkAction() {
+  const navMenu = document.getElementById('nav-menu')
+	navMenu.classList.remove('show')
+}
 
-	// Nav.
-		var $nav = $('#nav');
+navLink.forEach(n => n.addEventListener('click', linkAction))
 
-		if ($nav.length > 0) {
 
-			// Shrink effect.
-				$main
-					.scrollex({
-						mode: 'top',
-						enter: function() {
-							$nav.addClass('alt');
-						},
-						leave: function() {
-							$nav.removeClass('alt');
-						},
-					});
+const sections = document.querySelectorAll('section[id]')
 
-			// Links.
-				var $nav_a = $nav.find('a');
+window.addEventListener('scroll', scrollActive)
 
-				$nav_a
-					.scrolly({
-						speed: 1000,
-						offset: function() { return $nav.height(); }
-					})
-					.on('click', function() {
+function scrollActive(){
+  const scrollY = window.pageYOffset
+	sections.forEach(current =>  {
+	  const sectionHeight = current.offsetHeight
+		const sectionTop = current.offsetTop - 50
+		sectionId = current.getAttribute('id')
 
-						var $this = $(this);
-
-						// External link? Bail.
-							if ($this.attr('href').charAt(0) != '#')
-								return;
-
-						// Deactivate all links.
-							$nav_a
-								.removeClass('active')
-								.removeClass('active-locked');
-
-						// Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
-							$this
-								.addClass('active')
-								.addClass('active-locked');
-
-					})
-					.each(function() {
-
-						var	$this = $(this),
-							id = $this.attr('href'),
-							$section = $(id);
-
-						// No section for this link? Bail.
-							if ($section.length < 1)
-								return;
-
-						// Scrollex.
-							$section.scrollex({
-								mode: 'middle',
-								initialize: function() {
-
-									// Deactivate section.
-										if (browser.canUse('transition'))
-											$section.addClass('inactive');
-
-								},
-								enter: function() {
-
-									// Activate section.
-										$section.removeClass('inactive');
-
-									// No locked links? Deactivate all links and activate this section's one.
-										if ($nav_a.filter('.active-locked').length == 0) {
-
-											$nav_a.removeClass('active');
-											$this.addClass('active');
-
-										}
-
-									// Otherwise, if this section's link is the one that's locked, unlock it.
-										else if ($this.hasClass('active-locked'))
-											$this.removeClass('active-locked');
-
-								}
-							});
-
-					});
-
+		if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active')
+		}else{
+      document
+        .querySelector('.nav-menu a[href*=' + sectionId + ']')
+        .classList.remove('active');
 		}
+	})
+}
 
-	// Scrolly.
-		$('.scrolly').scrolly({
-			speed: 1000
-		});
+const sr = ScrollReveal({
+  origin: 'top',
+	distance: '80px',
+	duration: 2000,
+	reset: true
+})
 
-})(jQuery);
+sr.reveal('.home-title', {})
+sr.reveal('.home-scroll', {delay: 200});
+sr.reveal('.home-img', {origin: 'right', delay: 400});
+
+sr.reveal('.about-img', {delay: 500});
+sr.reveal('.about-subtitle', { delay: 300 });
+sr.reveal('.about-profession', { delay: 400 });
+sr.reveal('.about-text', { delay: 500 });
+sr.reveal('.about-social-icon', { delay: 600, interval: 200 });
+
+sr.reveal('.skills-subtitle', {});
+sr.reveal('.skills-name', {distance: '20px', delay: 50, interval: 100});
+sr.reveal('.skills-img', {delay: 400});
+
+sr.reveal('.portfolio-img', { interval: 200 });
