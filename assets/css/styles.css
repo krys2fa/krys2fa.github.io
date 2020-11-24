@@ -264,6 +264,10 @@ img {
   row-gap: 2rem;
 }
 
+.skills-box {
+  margin-left: 20px;
+}
+
 .skills-subtitle {
   color: var(--first-color);
 	margin-bottom: var(--mb-3);
