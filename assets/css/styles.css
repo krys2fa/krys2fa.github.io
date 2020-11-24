@@ -336,6 +336,22 @@ img {
   color: var(--white-color);
 }
 
+.about-social-white i {
+  font-size: 30px;
+}
+
+.contact a {
+	border: 1px solid #000;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.contact {
+	color: #000;
+	text-align: center;
+  margin: 40px 0;
+}
+
 .action-buttons {
   border: 1px solid;
 	padding: 10px;
