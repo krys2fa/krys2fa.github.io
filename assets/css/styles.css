@@ -237,10 +237,6 @@ img {
 	overflow: hidden;
 }
 
-/* .about-img img {
-  width: 100px;
-} */
-
 .about-subtitle {
   font-size: var(--h2-font-size);
 	color: var(--first-color);
@@ -474,7 +470,7 @@ img {
 	}
 
 	.about-img img {
-	  width: 165px;
+	  width: 200px;
 	}
 
 	.skills-container {
