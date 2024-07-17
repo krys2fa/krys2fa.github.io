@@ -299,7 +299,8 @@ img {
 
 .portfolio-img {
   position: relative;
-	overflow: hidden;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .portfolio-img img {
