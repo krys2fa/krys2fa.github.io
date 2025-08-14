@@ -1,389 +1,620 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <title>Christopher Amanor</title>
-</head>
-
-<body>
-
-  <header class="l-header">
-    <nav class="nav bd-grid">
-      <div>
-        <a href="#" class="nav-logo">Christopher Amanor</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christopher Amanor - Full Stack Developer</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon: using profile picture -->
+    <link rel="icon" href="assets/images/profile-pic.jpeg" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="assets/images/profile-pic.jpeg" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/profile-pic.jpeg"
+      type="image/jpeg"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+      <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
       </div>
+    </div>
 
-      <div class="nav-menu" id="nav-menu">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-          <li class="nav-item"><a href="#publications" class="nav-link">Publications</a></li>
+    <!-- Floating Navigation -->
+    <nav class="glass-nav">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">
+          <div class="logo-circle">
+            <span>CA</span>
+          </div>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#portfolio" class="nav-link">Work</a></li>
+          <li><a href="#publications" class="nav-link">Articles</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-      </div>
-
-      <div class="nav-toggle" id="nav-toggle">
-        <i class="bx bx-menu"></i>
+        <div class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
-  </header>
 
-
-  <main class="l-main">
-    <section class="home" id='home'>
-      <div class="home-container bd-grid">
-        <h1 class="home-title"><span>Hi</span><br>there.</h1>
-
-        <div class="home-scroll">
-          <a href="#about" class="home-scroll-link"><i class="bx bx-up-arrow-alt"></i>Scroll down</a>
-        </div>
-
-        <div>
-          <a class="action-buttons" target="_blank" href="mailto:christopher.k.amanor@gmail.com"><i class="bx bxl-phone-outgoing"></i><span><i class='bx bx-mail-send'></i> &nbsp; Hire Me</span></a>
-          <a class="action-buttons" target="_blank" href="https://drive.google.com/file/d/1-DaAg8PTdD8RbzidIlJxEH9E6ZQLTMxp/view?usp=sharing"><i class='bx bx-file'></i> &nbsp;Resume</a>
-        </div>
-
-        <div class="about-social-white">
-            <a target="_blank" href="https://www.linkedin.com/in/christopher-amanor/" class="about-social-white"><i class="bx bxl-linkedin"></i></a>
-            <a target="_blank" href="https://github.com/krys2fa" class="about-social-white"><i class="bx bxl-github"></i></a>
-            <a target="_blank" href="#" class="about-social-white"><i class="bx bxl-angelist"></i></a>
-            <a target="_blank" href="https://twitter.com/krys2fa" class="about-social-white"><i class="bx bxl-twitter"></i></a>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="bx bx-code-alt"></i>
+            <span>Full Stack Developer</span>
           </div>
-
-        <!-- <img src="assets/images/profile-pic.jpeg" alt="" class="home-img"> -->
-      </div>
-
-    </section>
-
-    <section class="about section" id="about">
-      <h2 class="section-title">About</h2>
-
-      <div class="about-container bd-grid">
-        <div class="about-img">
-          <img src="assets/images/profile-pic.jpeg" alt="">
-        </div>
-
-        <div>
-          <h2 class="about-subtitle">I am Christopher Amanor</h2>
-          <span class="about-profession">Remote Full Stack Developer</span>
-          <p class="about-text">
-            Ruby | Python | JavaScript | React | PHP
+          <h1 class="hero-title">
+            <span class="title-line">Hi, I'm</span>
+            <span class="title-name">Christopher Amanor</span>
+          </h1>
+          <p class="hero-description">
+             I develop web applications using Python, Ruby, PHP, JavaScript/TypeScript and
+            React to solve problems and improve services. Open to remote roles and reloction to Canada, US and Europe.
           </p>
-          <p>
-            I develop web applications using Ruby, Rails, PHP, JavaScript and React to solve problems and improve services. My background is in Physics, Business Administration and Project Management. I have experience building apps in the finance and telecommunications industry in Ghana and also remotely with companies around the world.
-          </p>
-          <div class="about-social">
-            <a target="_blank" href="https://www.linkedin.com/in/christopher-amanor/" class="about-social-icon"><i class="bx bxl-linkedin"></i></a>
-            <a target="_blank" href="https://github.com/krys2fa" class="about-social-icon"><i class="bx bxl-github"></i></a>
-            <a href="#" class="about-social-icon"><i class="bx bxl-angelist"></i></a>
-            <a target="_blank" href="https://twitter.com/krys2fa" class="about-social-icon"><i class="bx bxl-twitter"></i></a>
+          <div class="hero-actions">
+            <a href="mailto:christopher.k.amanor@gmail.com" class="btn-primary">
+              <i class="bx bx-mail-send"></i>
+              <span>Let's Talk</span>
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1hAz6pMwXHrG2YI_Od8mfeD69_xbvKbO9/view?usp=sharing"
+              target="_blank"
+              class="btn-secondary"
+            >
+              <i class="bx bx-download"></i>
+              <span>Resume</span>
+            </a>
+          </div>
+          <div class="hero-social">
+            <a
+              href="https://www.linkedin.com/in/christopher-amanor/"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/krys2fa"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="bx bxl-github"></i>
+            </a>
+            <a
+              href="https://twitter.com/krys2fa"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="profile-container">
+            <div class="profile-ring"></div>
+            <img
+              src="assets/images/profile-pic.jpeg"
+              alt="Christopher Amanor"
+              class="profile-image"
+            />
+            <div class="floating-icons">
+              <div class="icon-item" style="--delay: 0s">
+                <i class="bx bxl-javascript"></i>
+              </div>
+              <div class="icon-item" style="--delay: 0.5s">
+                <i class="bx bxl-react"></i>
+              </div>
+              <div class="icon-item" style="--delay: 1s">
+                <i class="bx bxl-python"></i>
+              </div>
+              <div class="icon-item" style="--delay: 1.5s">
+                <i class="bx bxs-data"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <span>Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get to know me</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-content glass-card">
+            <h3>I am Christopher Amanor</h3>
+            <p class="about-role">Remote Full Stack Developer</p>
+            <div class="tech-stack">
+              <span class="tech-item">Ruby</span>
+              <span class="tech-item">Python</span>
+              <span class="tech-item">JavaScript</span>
+              <span class="tech-item">React</span>
+              <span class="tech-item">PHP</span>
+            </div>
+            <p class="about-description">
+              <!-- My background is in Physics, Business Administration and Project Management. I have experience building apps in the finance and telecommunications industry in Ghana and also remotely with companies around the world. -->
+
+              Full-stack engineer with <b>8+ years</b> of proven success
+              delivering scalable software across startups, enterprises, and
+              NGOs in Africa, Europe, and the Americas. <br />I build
+              production-ready web and mobile products and I’m actively working
+              with <b>Agentic AI</b> and applied ML. I’ve led cross-functional
+              teams, mentored developers, and driven end-to-end projects from
+              product discovery to launch and maintenance. Currently deepening
+              my AI/ML and <b>product management</b> expertise to bridge
+              technical execution with strategic product vision. I contribute to
+              <b>open-source</b> projects including Microverse, The Odin
+              Project, and Public Lab, and I enjoy turning complex problems into
+              clean, user-centered solutions. <br />
+              Open to <b>remote</b> roles and <b>relocation</b> to Canada, the
+              US, or Europe.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">8+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">20+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image glass-card">
+            <img
+              src="assets/images/profile-pic.jpeg"
+              alt="Christopher Amanor"
+              class="about-img"
+            />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="skills section" id="skills">
-      <h2 class="section-title">Skills</h2>
-
-      <div class="skills-box">
-        <h3 class="skills-subtitle">Development</h3>
-        <span class="skills-name">HTML</span>
-        <span class="skills-name">CSS</span>
-        <span class="skills-name">Sass</span>
-        <span class="skills-name">JavaScript(ES5/ES6)</span>
-        <span class="skills-name">React</span>
-        <span class="skills-name">Ruby</span>
-        <span class="skills-name">Ruby on Rails</span>
-        <span class="skills-name">Redux</span>
-        <span class="skills-name">Bootstrap</span>
-        <span class="skills-name">Bulma</span>
-        <span class="skills-name">Semantic UI</span>
-        <span class="skills-name">Git</span>
-        <span class="skills-name">MySQL</span>
-        <span class="skills-name">PostgreSQL</span>
-        <span class="skills-name">MongoDB</span>
-        <span class="skills-name">Python</span>
-        <span class="skills-name">Flask</span>
-        <span class="skills-name">Docker</span>
-        <span class="skills-name">GitHub</span>
-        <span class="skills-name">Heroku</span>
-        <span class="skills-name">Netlify</span>
-        <span class="skills-name">Test Driven Development</span>
-
-        <h3 class="skills-subtitle">Professional</h3>
-        <span class="skills-name">Remote Pair-Programming</span>
-        <span class="skills-name">Teamwork</span>
-        <span class="skills-name">Mentoring</span>
-        <span class="skills-name">Project Management</span>
-      </div>
-
-    </section>
-
-    <section class="portfolio section" id="portfolio">
-      <h2 class="section-title">Portfolio</h2>
-
-      <div class="portfolio-container bd-grid">
-
-        <div>
-          Transfer(s) Exhibition Website
-          <div class="portfolio-img">
-        <img src="assets/images/transfers.png" alt="">
-        <div class="portfolio-link">
-          <a target="_blank" href="https://transfer-s.org/" class="portfolio-link-name">View Demo</a>
-          <a target="_blank" href="https://github.com/krys2fa/transfers-web" class="portfolio-link-name">View Repository</a>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">My expertise</span>
+          <h2 class="section-title">Skills & Technologies</h2>
         </div>
-      </div>
-        <div>
-          <span>Tech Stack:</span>
-          <span class="skills-name">HTML</span>
-          <span class="skills-name">CSS</span>
-          <span class="skills-name">JavaScript</span>
-          <span class="skills-name">Git</span>
-          <span class="skills-name">GitHub</span>
-          <span class="skills-name">Netlify</span>
-          <span class="skills-name">GithHub Pages</span>
-        </div>
-        </div>
-
-      <div>
-        Elbon Educational Consulting Website
-        <div class="portfolio-img">
-        <img src="assets/images/elbon.png" alt="">
-        <div class="portfolio-link">
-          <a target="_blank" href="https://krys2fa.github.io/elbon/" class="portfolio-link-name">View Demo</a>
-          <a target="_blank" href="https://github.com/krys2fa/elbon" class="portfolio-link-name">View Repository</a>
-        </div>
-      </div>
-      <div>
-          <span>Tech Stack:</span>
-          <span class="skills-name">React</span>
-          <span class="skills-name">Redux</span>
-          <span class="skills-name">Git</span>
-          <span class="skills-name">GitHub</span>
-          <span class="skills-name">Netlify</span>
-          <span class="skills-name">Jest</span>
-        </div>
-      </div>
-
-      <div>
-        Thrive Family Chapel Church Website
-        <div class="portfolio-img">
-        <img src="assets/images/tfc.png" alt="">
-        <div class="portfolio-link">
-          <!-- <a target="_blank" href="https://ironman-dash.netlify.app/" class="portfolio-link-name">View Demo</a> -->
-          <a target="_blank" href="https://github.com/krys2fa/thrive-family-chapel" class="portfolio-link-name">View Repository</a>
-        </div>
-      </div>
-      <div>
-          <span>Tech Stack:</span>
-          <span class="skills-name">JavaScript(ES6)</span>
-          <span class="skills-name">ReactJS</span>
-          <span class="skills-name">Git</span>
-          <span class="skills-name">GitHub</span>
-          <span class="skills-name">Netlify</span>
-          <span class="skills-name">Jest</span>
-        </div>
-      </div>
-
-
-
-        <div>
-          Vehicle Booking App
-          <div class="portfolio-img">
-        <img src="assets/images/vehicle-booking.png" alt="">
-        <div class="portfolio-link">
-          <a target="_blank" href="https://vehicle-booking.netlify.app/" class="portfolio-link-name">View Demo</a>
-          <a target="_blank" href="https://github.com/krys2fa/vehicle-booking-app" class="portfolio-link-name">View Repository</a>
-        </div>
-      </div>
-        <div>
-          <span>Tech Stack:</span>
-          <span class="skills-name">React</span>
-          <span class="skills-name">Redux</span>
-          <span class="skills-name">Git</span>
-          <span class="skills-name">GitHub</span>
-          <span class="skills-name">Netlify</span>
-          <span class="skills-name">Jest</span>
-        </div>
-        </div>
-
-      <div>
-        Car TV Show Guide
-        <div class="portfolio-img">
-        <img src="assets/images/car-show-guide.png" alt="">
-        <div class="portfolio-link">
-          <a target="_blank" href="https://car-show-guide.netlify.app/" class="portfolio-link-name">View Demo</a>
-          <a target="_blank" href="https://github.com/krys2fa/tv-show-guide" class="portfolio-link-name">View Repository</a>
-        </div>
-      </div>
-      <div>
-          <span>Tech Stack:</span>
-          <span class="skills-name">React</span>
-          <span class="skills-name">Redux</span>
-          <span class="skills-name">Git</span>
-          <span class="skills-name">GitHub</span>
-          <span class="skills-name">Netlify</span>
-          <span class="skills-name">Jest</span>
-        </div>
-      </div>
-
-      <div>
-        Ironman Dash Game
-        <div class="portfolio-img">
-        <img src="assets/images/ironman-dash.png" alt="">
-        <div class="portfolio-link">
-          <a target="_blank" href="https://ironman-dash.netlify.app/" class="portfolio-link-name">View Demo</a>
-          <a target="_blank" href="https://github.com/krys2fa/ironman-dash" class="portfolio-link-name">View Repository</a>
-        </div>
-      </div>
-      <div>
-          <span>Tech Stack:</span>
-          <span class="skills-name">JavaScript(ES6)</span>
-          <span class="skills-name">Phaser Game Engine</span>
-          <span class="skills-name">Git</span>
-          <span class="skills-name">GitHub</span>
-          <span class="skills-name">Netlify</span>
-          <span class="skills-name">Jest</span>
-        </div>
-      </div>
-
-      <div>
-        Sports Blog
-        <div class="portfolio-img">
-        <img src="assets/images/sportzhood.png" alt="">
-        <div class="portfolio-link">
-          <a target="_blank" href="https://sportzhood.herokuapp.com/" class="portfolio-link-name">View Demo</a>
-          <a target="_blank" href="https://github.com/krys2fa/sportzhood" class="portfolio-link-name">View Repository</a>
-        </div>
-      </div>
-      <div>
-          <span>Tech Stack:</span>
-          <span class="skills-name">Ruby on Rails</span>
-          <span class="skills-name">PostgreSQL</span>
-          <span class="skills-name">Git</span>
-          <span class="skills-name">GitHub</span>
-          <span class="skills-name">Heroku</span>
-          <span class="skills-name">RSpec</span>
-        </div>
-      </div>
-
-       <div>
-        Weather Forecast App
-        <div class="portfolio-img">
-        <img src="assets/images/weather.png" alt="">
-        <div class="portfolio-link">
-          <a target="_blank" href="https://raw.githack.com/krys2fa/weather-app/weather-app/dist/index.html" class="portfolio-link-name">View Demo</a>
-          <a target="_blank" href="https://github.com/krys2fa/weather-app" class="portfolio-link-name">View Repository</a>
-        </div>
-      </div>
-      <div>
-          <span>Tech Stack:</span>
-          <span class="skills-name">JavaScript(ES6)</span>
-          <span class="skills-name">Git</span>
-          <span class="skills-name">GitHub</span>
-          <span class="skills-name">GitHack</span>
-        </div>
-      </div>
-
-
-     <div>
-       CSS Lint Tool
-        <div class="portfolio-img">
-        <img src="assets/images/css-censor.png" alt="">
-        <div class="portfolio-link">
-          <a target="_blank" href="https://github.com/krys2fa/css-censor" class="portfolio-link-name">View Repository</a>
-        </div>
-      </div>
-      <div>
-          <span>Tech Stack:</span>
-          <span class="skills-name">Ruby</span>
-          <span class="skills-name">RSpec</span>
-          <span class="skills-name">Git</span>
-          <span class="skills-name">GitHub</span>
-        </div>
-      </div>
-     </div>
-
-    </section>
-
-    <section class="portfolio section" id="publications">
-      <h2 class="section-title">Publications</h2>
-
-     <div class="publications-container bd-grid">
-
-      <div class="portfolio-img">
-        <div>How Generative AI Enhances Web Development</div>
-        <img src="assets/images/genai.webp" alt="">
-        <div class="portfolio-link">
-          <a target="_blank" href="https://medium.com/@krys2fa/how-generative-ai-enhances-web-development-2d4bf0c40e84" class="portfolio-link-name">Read More</a>
-        </div>
-      </div>
-
-        <div class="portfolio-img">
-          <div>CSS Background Images: The Right Use Cases</div>
-          <img src="assets/images/background-images.jpeg" alt="">
-          <div class="portfolio-link">
-            <a target="_blank" href="https://medium.com/@krys2fa/background-images-in-css-the-right-use-cases-1e3ca259bbcd" class="portfolio-link-name">Read More</a>
+        <div class="skills-grid">
+          <div class="skill-category glass-card">
+            <div class="category-icon">
+              <i class="bx bx-code-alt"></i>
+            </div>
+            <h3>Development</h3>
+            <div class="skill-list">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">Sass</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">JavaScript(ES5/ES6)</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">React Native</span>
+              <span class="skill-tag">Ruby</span>
+              <span class="skill-tag">Ruby on Rails</span>
+              <span class="skill-tag">Redux</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Agentic AI</span>
+            </div>
+          </div>
+          <div class="skill-category glass-card">
+            <div class="category-icon">
+              <i class="bx bx-data"></i>
+            </div>
+            <h3>Database, Cloud & Tools</h3>
+            <div class="skill-list">
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Firebase</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">GCP</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Heroku</span>
+              <span class="skill-tag">Netlify</span>
+              <span class="skill-tag">Test Driven Development</span>
+            </div>
+          </div>
+          <div class="skill-category glass-card">
+            <div class="category-icon">
+              <i class="bx bx-group"></i>
+            </div>
+            <h3>Professional</h3>
+            <div class="skill-list">
+              <span class="skill-tag">Product Management</span>
+              <span class="skill-tag">Agile Project Management</span>
+              <span class="skill-tag">Remote Pair-Programming</span>
+              <span class="skill-tag">Mentoring</span>
+              <span class="skill-tag">Teamwork</span>
+            </div>
           </div>
         </div>
-
-
-
-      <div class="portfolio-img">
-        <div>Setting up a JavaScript Project with Webpack and Linters</div>
-        <img src="assets/images/js-setup.jpeg" alt="">
-        <div class="portfolio-link">
-          <a target="_blank" href="https://medium.com/@krys2fa/bootstrapping-a-javascript-project-with-webpack-4ae0bc316c80" class="portfolio-link-name">Read More</a>
-        </div>
       </div>
-
     </section>
 
-    <section class="contact">
-      <a class="" target="_blank" href="mailto:christopher.k.amanor@gmail.com"><i class='bx bx-mail-send'></i> &nbsp; Contact Me</a>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">My work</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+        <div class="portfolio-grid">
+          <div class="project-card glass-card">
+            <div class="project-image">
+              <img src="assets/images/alp.png" alt="AI Learning Platform" />
+              <div class="project-overlay">
+                <a
+                  href="https://ai-learning-platform-olive.vercel.app/"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+                <a
+                  href="https://github.com/krys2fa/ai-learning-platform"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>AI Learning Platform</h3>
+              <p>A modern, scalable React/Next.js platform for AI education.</p>
+              <div class="project-tech">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>Redux</span>
+                <span>Firebase</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card glass-card">
+            <div class="project-image">
+              <img
+                src="assets/images/giip.png"
+                alt="Ghana Investments Insights Portal"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://ghana-investment-insights.streamlit.app/"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+                <a
+                  href="https://github.com/krys2fa/rt-rag-chatbot-assistant"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Ghana Investment Insights Portal</h3>
+              <p>
+                This portal helps investors, analysts, and policymakers explore
+                Ghana's economic landscape using official Bank of Ghana reports.
+              </p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>Streamlit UI</span>
+                <span>PyPDF2</span>
+                <span>LangChain</span>
+                <span>ChromaDB</span>
+                <span>HuggingFace Sentence Transformers</span>
+                <span>Groq LLM (Llama 3.1-8b-instant)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TODO: Add wedding planner app -->
+
+          <!-- <div class="project-card glass-card">
+            <div class="project-image">
+              <img src="assets/images/sportzhood.png" alt="Sports Blog" />
+              <div class="project-overlay">
+                <a
+                  href="https://sportzhood.herokuapp.com/"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+                <a
+                  href="https://github.com/krys2fa/sportzhood"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Sports Blog</h3>
+              <p>
+                A dynamic sports blog platform with user authentication, content
+                management, and social features.
+              </p>
+              <div class="project-tech">
+                <span>Ruby on Rails</span>
+                <span>PostgreSQL</span>
+                <span>RSpec</span>
+                <span>Heroku</span>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="project-card glass-card">
+            <div class="project-image">
+              <img
+                src="assets/images/ironman-dash.png"
+                alt="Ironman Dash Game"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://ironman-dash.netlify.app/"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+                <a
+                  href="https://github.com/krys2fa/ironman-dash"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Ironman Dash Game</h3>
+              <p>
+                An interactive browser-based game built with Phaser game engine
+                featuring smooth animations.
+              </p>
+              <div class="project-tech">
+                <span>JavaScript(ES6)</span>
+                <span>Phaser</span>
+                <span>Jest</span>
+                <span>Netlify</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer class="footer section">
-      <div class="footer-container bd-grid">
-        <div class="footer-data">
-          <h2 class="footer-title">Christopher Amanor</h2>
-          <p class="footer-text">"I am Christopher Amanor and this is my personal website."</p>
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Knowledge sharing</span>
+          <h2 class="section-title">Articles & Publications</h2>
         </div>
+        <div class="publications-grid">
+          <article class="publication-card glass-card">
+            <div class="publication-image">
+              <img src="assets/images/giip.png" alt="Generative AI Article" />
+            </div>
+            <div class="publication-content">
+              <h3>Ghana Investment Insights Portal</h3>
+              <p>
+                This is a publication on the Ready Tensor website about a
+                project that presents a business-focused portal for exploring
+                Ghana's investment landscape using official Bank of Ghana
+                reports.
+              </p>
+              <a
+                href="https://app.readytensor.ai/publications/module-1-project-1-submission-rag-based-ai-assistant-ynz0tnpH0Vsa"
+                target="_blank"
+                class="read-more"
+              >
+                Read Article <i class="bx bx-right-arrow-alt"></i>
+              </a>
+            </div>
+          </article>
 
-        <div class="footer-data">
-          <h2 class="footer-title">Explore</h2>
-          <ul>
-            <li><a href="#home" class="footer-link">Home</a></li>
-            <li><a href="#about" class="footer-link">About</a></li>
-            <li><a href="#skills" class="footer-link">Skills</a></li>
-            <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
-            <li><a href="#publications" class="footer-link">Publications</a></li>
-          </ul>
+          <article class="publication-card glass-card">
+            <div class="publication-image">
+              <img src="assets/images/genai.webp" alt="Generative AI Article" />
+            </div>
+            <div class="publication-content">
+              <h3>How Generative AI Enhances Web Development</h3>
+              <p>
+                Exploring the impact of AI tools on modern web development
+                workflows and productivity.
+              </p>
+              <a
+                href="https://medium.com/@krys2fa/how-generative-ai-enhances-web-development-2d4bf0c40e84"
+                target="_blank"
+                class="read-more"
+              >
+                Read Article <i class="bx bx-right-arrow-alt"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="publication-card glass-card">
+            <div class="publication-image">
+              <img
+                src="assets/images/background-images.jpeg"
+                alt="CSS Background Images"
+              />
+            </div>
+            <div class="publication-content">
+              <h3>CSS Background Images: The Right Use Cases</h3>
+              <p>
+                A comprehensive guide to using CSS background images effectively
+                in web development.
+              </p>
+              <a
+                href="https://medium.com/@krys2fa/background-images-in-css-the-right-use-cases-1e3ca259bbcd"
+                target="_blank"
+                class="read-more"
+              >
+                Read Article <i class="bx bx-right-arrow-alt"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="publication-card glass-card">
+            <div class="publication-image">
+              <img
+                src="assets/images/js-setup.jpeg"
+                alt="JavaScript Project Setup"
+              />
+            </div>
+            <div class="publication-content">
+              <h3>Setting up a JavaScript Project with Webpack</h3>
+              <p>
+                Step-by-step guide to bootstrap modern JavaScript projects with
+                proper tooling.
+              </p>
+              <a
+                href="https://medium.com/@krys2fa/bootstrapping-a-javascript-project-with-webpack-4ae0bc316c80"
+                target="_blank"
+                class="read-more"
+              >
+                Read Article <i class="bx bx-right-arrow-alt"></i>
+              </a>
+            </div>
+          </article>
         </div>
-
-      <div class="footer-data">
-        <h2 class="footer-title">Follow</h2>
-        <a target="_blank" href="https://www.linkedin.com/in/christopher-amanor/" class="about-social-white"><i class="bx bxl-linkedin"></i></a>
-            <a target="_blank" href="https://github.com/krys2fa" class="about-social-white"><i class="bx bxl-github"></i></a>
-            <a target="_blank" href="#" class="about-social-white"><i class="bx bxl-angelist"></i></a>
-            <a target="_blank" href="https://twitter.com/krys2fa" class="about-social-white"><i class="bx bxl-twitter"></i></a>
       </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-container glass-card">
+          <div class="contact-content">
+            <h2>Let's Build Something Amazing Together</h2>
+            <p>
+              Ready to start your next project? I'd love to hear from you and
+              discuss how we can bring your ideas to life.
+            </p>
+            <a
+              href="mailto:christopher.k.amanor@gmail.com"
+              class="btn-primary large"
+            >
+              <i class="bx bx-mail-send"></i>
+              <span>Get In Touch</span>
+            </a>
+          </div>
+        </div>
       </div>
+    </section>
 
-
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-main">
+            <h3>Christopher Amanor</h3>
+            <p>
+              Full Stack Developer building digital experiences with modern
+              technologies.
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://www.linkedin.com/in/christopher-amanor/"
+                target="_blank"
+              >
+                <i class="bx bxl-linkedin"></i>
+              </a>
+              <a href="https://github.com/krys2fa" target="_blank">
+                <i class="bx bxl-github"></i>
+              </a>
+              <a href="https://twitter.com/krys2fa" target="_blank">
+                <i class="bx bxl-twitter"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div class="footer-section">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Connect</h4>
+              <ul>
+                <li>
+                  <a href="mailto:christopher.k.amanor@gmail.com">Email</a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/christopher-amanor/"
+                    target="_blank"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a href="https://github.com/krys2fa" target="_blank"
+                    >GitHub</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Christopher Amanor. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
-  </main>
 
-  <script src="https://unpkg.com/scrollreveal"></script>
-
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
